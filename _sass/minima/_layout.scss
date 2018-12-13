@@ -15,7 +15,6 @@
   @include relative-font-size(5);
   font-weight: 400;
   line-height: auto;
-  width:600px;
   display: inline-block;
   margin-top:$spacing-unit*2;
 
@@ -37,8 +36,6 @@
   margin-right:auto;
   padding: $spacing-unit * 2;
   display: inline-block;
-  width: auto;
-  height: auto;
   
 }
 
@@ -49,7 +46,6 @@
   margin-top: $spacing-unit * 2;
   text-align:justify;
   text-justify: inter-word;
-  width : $content-width;
   
   @include relative-font-size(1);
 
@@ -344,7 +340,6 @@
   margin-top: $spacing-unit * 5;
   text-align:justify;
   text-justify: inter-word;
-  width: 600px;
   @include relative-font-size(1);
 
   h2 {
