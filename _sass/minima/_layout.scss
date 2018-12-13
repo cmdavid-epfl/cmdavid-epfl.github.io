@@ -17,6 +17,8 @@
   line-height: auto;
   display: inline-block;
   margin-top:$spacing-unit*2;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
 
   &,
   &:visited {
@@ -32,9 +34,6 @@
 }
 
 .story-figure {
-  margin-left:auto;
-  margin-right:auto;
-  padding: $spacing-unit * 2;
   display: inline-block;
   
 }
