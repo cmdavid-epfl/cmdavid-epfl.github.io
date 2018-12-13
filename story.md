@@ -17,3 +17,20 @@ permalink: /story/
    
    
    {% include image.html file="/assets/All_2016.png" %}
+   
+   <div class="story-text">
+   
+      This next map shows the same map as above, but as a timeline between 1990 and 2016.
+      
+   </div>
+   
+   {% include image.html file="/assets/All.gif" %}
+   
+   <div class="story-text">
+   
+      The graphs shown below...
+      
+   </div>
+   
+   {% include image.html file="/assets/tsplot.png" %}
+   
