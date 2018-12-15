@@ -44,6 +44,6 @@ permalink: /story/
    
    {% include image.html file="/assets/Asia_All.gif" title="Zoom on Asia" caption="Timelapse of the distribution of inventors in Asia for the period 1990-2016."%}
    
-   {% include image.html file="/assets/Europe_All.gif" title="Zoom on Asia" caption="Timelapse of the distribution of inventors in Europe for the period 1990-2016."%}
+   {% include image.html file="/assets/Europe_All.gif" title="Zoom on Europe" caption="Timelapse of the distribution of inventors in Europe for the period 1990-2016."%}
    
-   {% include image.html file="/assets/US_All.gif" title="Zoom on Asia" caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
+   {% include image.html file="/assets/US_All.gif" title="Zoom on the US" caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
