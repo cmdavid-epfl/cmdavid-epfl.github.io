@@ -15,7 +15,9 @@ permalink: /story/
 	   The first map below illustrates the locations of everyone whom was listed as an inventor in a patent whose application was filed in 2013. It does not come as much of a surprise that inventors are spread out all around the world, with some higher-density centers. These centers are the usual suspects :   
    </div>
    
-   {% include All_2013.html %}
+   <div class="story-figure">
+      {% include All_2013.html %}
+   </div>
    
    <div class="story-text">
    
@@ -59,7 +61,7 @@ permalink: /story/
       {% include top_us_table.html %} 
    </div>
    
-   {% include image.html file="/assets/top10_us.gif" title="Top US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest US-based assignees, ranked by the number of patent applications in the given year."} 
+   {% include image.html file="/assets/top10_us.gif" title="Top US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest US-based assignees, ranked by the number of patent applications in the given year." %} 
    
    <div class="story-text">
    
@@ -67,7 +69,7 @@ permalink: /story/
       
    </div>
    
-   {% include image.html file="/assets/top10_nonus.gif" title="Top Non-US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest Non-US-based assignees, ranked by the number of patent applications in the given year."}
+   {% include image.html file="/assets/top10_nonus.gif" title="Top Non-US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest Non-US-based assignees, ranked by the number of patent applications in the given year." %}
    
    <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
       <caption> <b>Top 10 Non-Us Assignees for each year</b></caption>
