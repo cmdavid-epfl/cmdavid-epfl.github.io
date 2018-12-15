@@ -19,7 +19,7 @@ permalink: /story/
    
    <div class="story-text">
    
-       Note that after 2013, the number diminishing number of inventors is mainly due to the delay between applying for a patent and obtaining it, which can take a few years. We us as date the patent application date, but the data is not included in the PatentsView database until the patent is accepted. 
+       Note that after 2013, the diminishing number of inventors is mainly due to the delay between applying for a patent and obtaining it, which can take a few years. We us as date the patent application date, but the data is not included in the PatentsView database until the patent is accepted. 
        
        This next map shows the same map as above, but as a timeline between 1990 and 2016.
       
@@ -33,5 +33,17 @@ permalink: /story/
       
    </div>
    
-   {% include image.html file="/assets/tsplot.png" title="Time Series data" caption="Evolution of ..."%}
+   {% include image.html file="/assets/tsplot.png" title="Time Series data" caption="Evolution of the (top) total number of patent applications for each year in the period 1990-2016 and their breakdown by patent type (second from top) total number of individuals listed as inventors in the patent applications for each year (third from top) total number of individuals listed as inventors in the patent applications by the top 10 US vs Non-US assignees, ranked by the number of inventors listed in their patent applications of the given year (fourth from top) total number of patents cited in the patent applications of each year (bottom) total number of individuals listed as assignees for each year"%}
    
+   
+   <div class="story-text">
+   
+       ...
+      
+   </div>
+   
+   {% include image.html file="/assets/Asia_All.gif" title="Zoom on Asia" caption="Timelapse of the distribution of inventors in Asia for the period 1990-2016."%}
+   
+   {% include image.html file="/assets/Europe_All.gif" title="Zoom on Asia" caption="Timelapse of the distribution of inventors in Europe for the period 1990-2016."%}
+   
+   {% include image.html file="/assets/US_All.gif" title="Zoom on Asia" caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
