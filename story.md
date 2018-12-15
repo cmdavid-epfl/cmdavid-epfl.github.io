@@ -56,7 +56,7 @@ permalink: /story/
       
    </div> 
    
-   <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
+   <div style="height:300px; overflow-x: scroll; overflow-y: scroll; font-weight: 20">
       <caption> <b>Top 10 Us Assignees for each year</b></caption>
       {% include top_us_table.html %} 
    </div>
@@ -69,11 +69,9 @@ permalink: /story/
       
    </div>
    
-   {% include image.html file="/assets/top10_nonus.gif" title="Top Non-US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest Non-US-based assignees, ranked by the number of patent applications in the given year." %}
-   
-   <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
+   <div style="height:300px; overflow-x: scroll; overflow-y: scroll; font-weight: 20">
       <caption> <b>Top 10 Non-Us Assignees for each year</b></caption>
       {% include top_nonus_table.html %}
    </div>
    
-   
+   {% include image.html file="/assets/top10_nonus.gif" title="Top Non-US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest Non-US-based assignees, ranked by the number of patent applications in the given year." %}   
