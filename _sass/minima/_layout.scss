@@ -38,6 +38,10 @@
   
 }
 
+.figure-figure figcaption {
+    @include relative-font-size(1.2);
+}
+
 .story-text {
   margin-left:auto;
   margin-right:auto;
