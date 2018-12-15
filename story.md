@@ -33,7 +33,7 @@ permalink: /story/
       
    </div>
    
-   {% include image.html file="/assets/tsplot.png" title="Time Series data" caption="Evolution of the (top) total number of patent applications for each year in the period 1990-2016 and their breakdown by patent type (second from top) total number of individuals listed as inventors in the patent applications for each year (third from top) total number of individuals listed as inventors in the patent applications by the top 10 US vs Non-US assignees, ranked by the number of inventors listed in their patent applications of the given year (fourth from top) total number of patents cited in the patent applications of each year (bottom) total number of individuals listed as assignees for each year"%}
+   {% include image.html file="/assets/tsplot.png" title="Time Series data" caption="Evolution of the (top) total number of patent applications for each year in the period 1990-2016 and their breakdown by patent type (second from top) total number of individuals listed as inventors in the patent applications for each year (third from top) total number of individuals listed as inventors in the patent applications by the top 10 US vs Non-US assignees, ranked by the number of patent applications in the given year (fourth from top) total number of patents cited in the patent applications of each year (bottom) total number of individuals listed as assignees for each year"%}
    
    
    <div class="story-text">
@@ -47,3 +47,16 @@ permalink: /story/
    {% include image.html file="/assets/Europe_All.gif" title="Zoom on Europe" caption="Timelapse of the distribution of inventors in Europe for the period 1990-2016."%}
    
    {% include image.html file="/assets/US_All.gif" title="Zoom on the US" caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
+   
+   
+   <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
+      {% include top_us_table.html %}
+      <caption> <b>Top 10 Us Assignees for each year</b></caption>
+   </div>
+   
+   <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
+      {% include top_nonus_table.html %}
+      <caption> <b>Top 10 Non-Us Assignees for each year</b></caption>
+   </div>
+   
+   
