@@ -48,15 +48,26 @@ permalink: /story/
    
    {% include image.html file="/assets/US_All.gif" title="Zoom on the US" caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
    
+   <div class="story-text">
+   
+       ...
+      
+   </div> 
    
    <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
-      {% include top_us_table.html %}
       <caption> <b>Top 10 Us Assignees for each year</b></caption>
+      {% include top_us_table.html %} 
+   </div>
+   
+   <div class="story-text">
+   
+       ...
+      
    </div>
    
    <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
-      {% include top_nonus_table.html %}
       <caption> <b>Top 10 Non-Us Assignees for each year</b></caption>
+      {% include top_nonus_table.html %}
    </div>
    
    
