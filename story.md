@@ -19,11 +19,13 @@ permalink: /story/
    
    <div class="story-text">
    
-      This next map shows the same map as above, but as a timeline between 1990 and 2016.
+       Note that after 2013, the number diminishing number of inventors is mainly due to the delay between applying for a patent and obtaining it, which can take a few years. We us as date the patent application date, but the data is not included in the PatentsView database until the patent is accepted. 
+       
+       This next map shows the same map as above, but as a timeline between 1990 and 2016.
       
    </div>
    
-   {% include image.html file="/assets/All.gif" %}
+   {% include image.html file="/assets/All.gif" title="World View" caption="Timelapse of the distribution of inventors in the world for the period 1990-2016."%}
    
    <div class="story-text">
    
@@ -31,5 +33,5 @@ permalink: /story/
       
    </div>
    
-   {% include image.html file="/assets/tsplot.png" %}
+   {% include image.html file="/assets/tsplot.png" title="Time Series data" caption="Evolution of ..."%}
    
