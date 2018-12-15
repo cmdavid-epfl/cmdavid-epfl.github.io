@@ -42,11 +42,11 @@ permalink: /story/
       
    </div>
    
-   {% include image.html file="/assets/Asia_All.gif" title="Zoom on Asia" caption="Timelapse of the distribution of inventors in Asia for the period 1990-2016."%}
+   {% include image.html file="/assets/Asia_All.gif" title="Zoom on Asia." caption="Timelapse of the distribution of inventors in Asia for the period 1990-2016."%}
    
-   {% include image.html file="/assets/Europe_All.gif" title="Zoom on Europe" caption="Timelapse of the distribution of inventors in Europe for the period 1990-2016."%}
+   {% include image.html file="/assets/Europe_All.gif" title="Zoom on Europe." caption="Timelapse of the distribution of inventors in Europe for the period 1990-2016."%}
    
-   {% include image.html file="/assets/US_All.gif" title="Zoom on the US" caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
+   {% include image.html file="/assets/US_All.gif" title="Zoom on the US." caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
    
    <div class="story-text">
    
@@ -59,11 +59,15 @@ permalink: /story/
       {% include top_us_table.html %} 
    </div>
    
+   {% include image.html file="/assets/top10_us.gif" title="Top US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest US-based assignees, ranked by the number of patent applications in the given year."} 
+   
    <div class="story-text">
    
        ...
       
    </div>
+   
+   {% include image.html file="/assets/top10_nonus.gif" title="Top Non-US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest Non-US-based assignees, ranked by the number of patent applications in the given year."}
    
    <div style="height:300px; overflow-x: scroll; overflow-y: scroll; ">
       <caption> <b>Top 10 Non-Us Assignees for each year</b></caption>
