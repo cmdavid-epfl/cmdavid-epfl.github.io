@@ -33,6 +33,9 @@ permalink: /rochester_dresden/
       
    <div class="story-text">
    
-   ...
+   <div style="height:500px; font-weight: 20; width:200px; ">
+      <caption> <b>Similarities Table</b></caption>
+      {% include rochester_dresden_sim.html %} 
+   </div> 
     
    </div>

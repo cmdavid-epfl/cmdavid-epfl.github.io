@@ -143,7 +143,8 @@ permalink: /story/
        
        <br><br>
        
-       Below, you will find a list of the comparisons we have made. For each of the comparisons, you can display any of the "layers" of innovation behind the companies chosen patent. Each layer in fact represents the density of the inventors listed in the patent applications of that layer. In other words, when <b>Layer 0</b> is active, the map shows the locations of the inventors of the original patent. <b>Layer 1</b> then shows the locations of the inventors for the patents which were cited by the patents in <b>Layer 0</b>, <b>Layer 2</b> then shows the locations of the inventors for the patents which were cited by the patents in <b>Layer 1</b> etc.  
+       Below, you will find a list of the comparisons we have made. For each of the comparisons, you can display any of the "layers" of innovation behind the companies chosen patent. Each layer in fact represents the density of the inventors listed in the patent applications of that layer. In other words, when <b>Layer 0</b> is active, the map shows the locations of the inventors of the original patent. <b>Layer 1</b> then shows the locations of the inventors for the patents which were cited by the patents in <b>Layer 0</b>, <b>Layer 2</b> then shows the locations of the inventors for the patents which were cited by the patents in <b>Layer 1</b> etc. Each analysis also contains a table with the similarities between compared patents at each level. The similarity, in this case, is defined as the number of patents citations which are included in both network, divided by the total number of patent citations. Both the number of patent citations and the number of total patents are cumulative with respect to the layers, in order to account for the fact that patents may not be cited at the same layer for both networks.
+       
        <br><br>
        You can view the analysis in any particular order.
        <A name="anchor-list"></A>
@@ -156,8 +157,7 @@ permalink: /story/
         </ul> 
        
        <br><br>
-       The takeaway is that ...  
-       
+       The takeaway from these examples is that, while all of these networks have <i>some</i> overlap, even similar patents by similar companies can be supported by networks that do not present any <i>significant</i> overlap. When we look at academic institutions, or when we compare corporations with government bodies like the Navy, these networks are even more distinct. This goes to show that if two groups are working towards the same goal, neither of them need be superfluous. Any amount of innovation today can have an impact, as innovators are constantly and incessantly building on top of previous work, using different sources as support.       
        <br><br><br>
        <h4>
 	      <A class="page-link" href="{{ "/index.html" | relative_url }}">Back to Front Page</A>
