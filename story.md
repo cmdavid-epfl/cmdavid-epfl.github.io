@@ -43,13 +43,14 @@ permalink: /story/
    {% include image.html file="/assets/Asia_All.gif" title="Zoom on Asia." caption="Timelapse of the distribution of inventors in Asia for the period 1990-2016."%}
    
    <div class="story-text">
-   Most notably in South Korea and in Taiwan, at the turn of the new millenium, the number of innovators grows from a moderate size up to the same scale as Tokyo, Japan.
+   Most notably in South Korea and in Taiwan, at the turn of the new millenium, the number of innovators grows from a moderate size up to the same scale as Tokyo, Japan. This coincides perfectly with the democratization occuring in South Korea at that time.
    </div>
    
    {% include image.html file="/assets/Europe_All.gif" title="Zoom on Europe." caption="Timelapse of the distribution of inventors in Europe for the period 1990-2016."%}
    
    <div class="story-text">
-   What is most striking about Europe is that the region does not exhibit any significant change during the period in question. Some places - namely Paris and Munich - do seem to grow faster than other European countries but in general inventors remain mostly spread out accross the continent.
+   What is most striking about Europe is that the region does not exhibit any significant change during the period in question. Some places - namely Paris and Munich - do seem to grow faster than other European countries but in general inventors remain mostly spread out accross the continent. One interesting fact to note is that the reunification of Germany does seem to lead to a steady growth in the number of inventors in the East after 1990.
+   
    </div>
    
    {% include image.html file="/assets/US_All.gif" title="Zoom on the US." caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
@@ -60,14 +61,27 @@ permalink: /story/
    <br><br><h4>
       A Quantitative Perspective
    </h4>
-   While these maps paint vivid picture of how innovation has evolved throught time in different places, we take a look at the numbers behind these maps before being drawing definitive conclusions.
+   While these maps paint vivid picture of how innovation has evolved throught time in different places, we take a look at the numbers behind these maps before being drawing definitive conclusions. From the first graph below we can see spectacular growth in the raw number of patent applications that are filed each year in the period under scrutiny. The number of utility patent applications in particular experiences a growth of 150% between 1990 and 2013. What also stands out from this graph is the almost constant proportion of patent types. 'Other Patents' include plant patents, defensive publications, and statutory invention registrations.
+   
+   <br><br>
+   
+   While the growth in the number of patents is staggering, from the second graph shown below we learn that the increase in the number of inventors listed in patent applications has grown even more : from 1990 to 2013, a more than 160% increase. So while most all research fields today require always more specialization, an ever growing number of innovators are required in practice to actually innovate. Contrast this conclusion with the information seen on the bottom-most graph, which illustrates the number of individuals listed as assignees in patent applications during each year under consideration. While the number grows until the start of the 2000's, it actually starts shrinking after this point. 
+   
+   <br><br>
+   
+   The initial growth in individuals as inventors, we suspect, can be attributed to the Dot-com bubble. in the late 1990's to early 2000's, a lot of capital was flowing to people whom inventors perceived as being technological visionnaries. After these flows starting drying up, the number of individuals as assignees also started coming back down. While there are still around 1500 patent applications every year filed by individuals, this completely pales in comparison to the number of innovations made by people that are part of teams. In fact, in the third graph from the top, we see that the number of innovators that are part of the top 10 US-based and Non-US-based companies or organizations (ranked by number of patent applications in each year) represent at any given time around 20 times the number of solo innovators.
+   
+   <br><br> 
+
+   Finally, when we look at the total number of patents which are cited in patent applications in each year, we can definitively say that what a typical patent holder today is one that is part of a large network and which is supported in their innovations by many other large networks of innovations.
 
    </div>
+
    {% include image.html file="/assets/tsplot.png" title="Time Series data" caption="Evolution of the (top) total number of patent applications for each year in the period 1990-2016 and their breakdown by patent type (second from top) total number of individuals listed as inventors in the patent applications for each year (third from top) total number of individuals listed as inventors in the patent applications by the top 10 US vs Non-US assignees, ranked by the number of patent applications in the given year (fourth from top) total number of patents cited in the patent applications of each year (bottom) total number of individuals listed as assignees for each year"%}
    
    <div class="story-text">
    
-   ...
+   In the table below, you can see the list of the top 10 US-based assignees for each year. The accompanying graph then shows the density of the inventors listed in the patent applications by those assignees.
    
    </div>
    
@@ -80,7 +94,7 @@ permalink: /story/
    
    <div class="story-text">
    
-       ...
+       What is interesting here is the density of inventors from US-based assignees in India. While there are close to none in the early 1990's,
       
    </div>
    
@@ -91,4 +105,36 @@ permalink: /story/
    
    {% include image.html file="/assets/top10_nonus.gif" title="Top Non-US Assignees." caption="Timelapse of the distribution of inventors in the world for the 10 largest Non-US-based assignees, ranked by patent applications in the given year." %}   
    
+   <div class="story-text">
+   
+       ...
+      
+   </div>
+   
    {% include image.html file="/assets/tsplot_assignees.png" title="Inventors for Top Assignees." caption=" Evolution in the number of inventors cited in the patent applications for some of the top US and Non-US Assignees, ranked by the number of patent applications."%}
+   
+   <div class="story-text">
+   
+       ...
+      
+   </div>
+
+   <div class="story-figure">
+      <figure>
+      {% include facebook.html %}
+      <figcaption> <b>Facebook 2013 Display Screen Patent.</b> Map illustrating the distribution of individuals listed as inventors in the patent application (Layer 0), and the distribution of the inventors in the patents cited by patent application (Layer 1), etc.. </figcaption>
+      </figure>
+   </div>
+   
+   <div class="story-text">
+   
+       ...
+      
+   </div>
+
+   <div class="story-figure">
+      <figure>
+      {% include tencent.html %}
+      <figcaption> <b>Tencent 2013 Display Screen Patent.</b> Map illustrating the distribution of individuals listed as inventors in the patent application (Layer 0), and the distribution of the inventors in the patents cited by patent application (Layer 1), etc.. </figcaption>
+      </figure>
+   </div>
