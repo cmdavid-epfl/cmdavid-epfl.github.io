@@ -38,7 +38,7 @@ permalink: /fb_tencent/
    
    It almost seems that Tencent's patent is one step behind on Facebook's patent. Tencent's <b>layer 1</b> patent inventors are both located in the US - one of them in the San Francisco area, where Facebook's <b>layer 0</b> patent inventors are located. Facebooks's <b>layer 1</b> patent inventors are located in the Northern US and in London, while their <b>layer 2</b> patent inventors are located all across mostly the US, Northern Europe, Japan and South Korea. Tencent's <b>layer 2</b> patent inventors, on the other hand, are less numerous and still exclusively in the US and Japan. It is only in fact it's <b>layer 3</b> inventors that are located accross the globe, though to much less of an extent than Facebook's <b>layer 3</b> inventors.
    
-   In any case, there does not seem to be much of a correspondance between the networks used by both companies, fact which the similarities table, below, confirms.
+   In any case, the correspondance between the two networks at <b>layer 3</b> is about 42%, which is fairly large, but expected, as the two patents are very similar. It is in fact more surprising that this similarity is only at 7.5% in <b>layer 2</b>.
    
    <br><br>
    <div style="height:500px; font-weight: 20; width:200px">

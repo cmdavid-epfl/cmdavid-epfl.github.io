@@ -19,7 +19,7 @@ permalink: /autonomous/
  	  When exploring the various layers of the maps below, we observe from the <b>layer 1</b> cited patent inventors that the US Navy solely cites patents from the US and Japan, whereas the two German companies have a broader base of citations. This is in line what we would expect, as the U.S. Navy were earlier out with their patent. Furthermore, it would be expected for the US Navy to have a relatively stronger connection to national research facilities and other national organizations, as opposed to that of the two privately own companies.
  	  
  	  <br><br>
- 	  Finally, from the similarities table at the bottom of the page, we see that while Volkswagen's and Siemens' networks are similar to each other (more than 20% at the 4th layer), the US Navy's network is quite different distinct, at least up until 4th and 5th layers.
+ 	  Finally, from the similarities table at the bottom of the page, we see that while Volkswagen's and Siemens' networks are very similar to each other (more than 68% at the 3rd layer), the US Navy's network is quite distinct, at least up until 3rd layer.
    </div>
  
    <div class="story-figure">

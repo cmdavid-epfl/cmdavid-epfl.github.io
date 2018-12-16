@@ -157,7 +157,7 @@ permalink: /story/
         </ul> 
        
        <br><br>
-       The takeaway from these examples is that, while all of these networks have <i>some</i> overlap, even similar patents by similar companies can be supported by networks that do not present any <i>significant</i> overlap. When we look at academic institutions, or when we compare corporations with government bodies like the Navy, these networks are even more distinct. This goes to show that if two groups are working towards the same goal, neither of them need be superfluous. Any amount of innovation today can have an impact, as innovators are constantly and incessantly building on top of previous work, using different sources as support.       
+       The takeaway from these examples is that, while all of these networks have <i>some</i> overlap, even similar patents by similar companies can be supported by networks that do not overlap by more than 60-70% after peeling back 3 to 4 layers. When we look at academic institutions, or when we compare corporations with government bodies like the Navy, these networks are even more distinct. This goes to show that if two groups are working towards the same goal, neither of them need be superfluous. Any amount of innovation today can have an impact, as innovators are constantly and incessantly building on top of previous work, using different sources as support.       
        <br><br><br>
        <h4>
 	      <A class="page-link" href="{{ "/index.html" | relative_url }}">Back to Front Page</A>
