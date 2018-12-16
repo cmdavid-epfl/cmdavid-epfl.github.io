@@ -19,7 +19,7 @@ permalink: /samsung/
        <br><br>
        If we inspect the innovation layers, it is interesting to note that at <b>layer 3</b> and <b>layer 4</b>, the 2010 patent has a significantly more diverse set of cited patents, notably with a stronger presence in Africa, Central Asia and the Middle East.
        <br><br>
-       Finally, we note that while these two technologies are in the same area of research and from the same company, there networks show relatively little overlap (20% at the third layer), as can be seen from the similarities table at the bottom of the page. This may be maily due to the fact that they are 15 years a part, and that battery power is a very important current research area, which means that there have probably been so many advances between the two dates that we would need to get back many more layers in the case of the 2010 patent before we start seeing a significant overlap with the patent from 1995.
+       Finally, we note that while these two technologies are in the same area of research and from the same company, their networks show relatively little overlap (20% at the third layer), as can be seen from the similarities table at the bottom of the page. This may be maily due to the fact that they are 15 years a part, and that battery power is a very important current research area, which means that there have probably been so many advances between the two dates that we would need to get back many more layers in the case of the 2010 patent before we start seeing a significant overlap with the patent from 1995.
    </div>
  
    <div class="story-figure">
