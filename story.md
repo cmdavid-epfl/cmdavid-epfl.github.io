@@ -150,7 +150,7 @@ permalink: /story/
        <br>
         <ul>
            <li> <h3><a class="page-link" href="{{ "/fb_tencent" | relative_url }}">Tencent and Facebook</a></h3> </li>
-           <li> <h3><a class="page-link" href="{{ "/rochester_dresden" | relative_url }}">Rochester University and Dresden Universitys</a></h3> </li>
+           <li> <h3><a class="page-link" href="{{ "/rochester_dresden" | relative_url }}">Rochester University and Dresden University</a></h3> </li>
            <li> <h3><a class="page-link" href="{{ "/autonomous" | relative_url }}">Autonomous Navigation Technology</a></h3> </li>
            <li> <h3><a class="page-link" href="{{ "/samsung" | relative_url }}">Samsung in 1995 and in 2010</a></h3> </li>
         </ul> 

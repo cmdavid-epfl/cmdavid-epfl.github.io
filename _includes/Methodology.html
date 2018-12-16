@@ -13,18 +13,10 @@
 <p>A few time series were also plotted to provide a more quantitative perspective on the data, to be more certain about the conclusions we drew from the figures.</p>
 <h2 id="Part-2.-Peeling-back-the-layers">Part 2. Peeling back the layers<a class="anchor-link" href="#Part-2.-Peeling-back-the-layers">&#182;</a></h2><p>In this second part, we look at the following examples of innovation networks for specific patents held by the following specific assignees:</p>
 <ul>
-<li>companies : <ul>
-<li>patents :</li>
-</ul>
-</li>
-<li>academic institutions :<ul>
-<li>patents :</li>
-</ul>
-</li>
-<li>governments :<ul>
-<li>patents :</li>
-</ul>
-</li>
+<li>Tencent and Facebook: Comparison of very similar patent applications filed at around the same time. See <a href="https://cmdavid-epfl.github.io/fb_tencent/">Story Page</a></li>
+<li>Rochester and Dresden Universities: Comparison of similar patents from academic institutions. See <a href="https://cmdavid-epfl.github.io/rochester_dresden/">Story Page</a></li>
+<li>Volkswagen AG, Siemens AG, and the US Navy: Comparison of patents related to autonomous vehicules between two private firms and a US government body. See <a href="https://cmdavid-epfl.github.io/autonomous/">Story Page</a></li>
+<li>Samsung Electronics: Comparison between battery charging technology patents from the same firm, with one patent from 1995 and the other one from 2010. See <a href="https://cmdavid-epfl.github.io/samsung/">Story Page</a> </li>
 </ul>
 <p>By looking at these networks, we answer the following questions:</p>
 <ul>
@@ -106,7 +98,7 @@
 <li><code>patent_number</code>: US Patent number, as assigned by USPTO.</li>
 <li><code>app_date</code>: Date the patent application was filed (filing date)</li>
 </ul>
-<p>For the purposes of situating in time the patent data we have, we chose to consider the date at which the patent application was filed, instead of the date at which it was granted. The reasoning behind this choice is that at the time of the patent application, the innovation supporting it already exists. So while using the application date has reduced the amount of most-recent data (post 2014) we can work with, in our opinion it paints a more vivid picture of innovation. Furthermore, as our analysis is performed on data spanning a almost 3 decades, we're confident this choice is not detremental to our story.</p>
+<p>For the purposes of situating in time the patent data we have, we chose to consider the date at which the patent application was filed, instead of the date at which it was granted. The reasoning behind this choice is that at the time of the patent application, the innovation supporting it already exists. So while using the application date has reduced the amount of most-recent data (post 2014) we can work with, in our opinion it paints a more vivid picture of innovation. Furthermore, as our analysis is performed on data spanning almost 3 decades, we're confident this choice is not detremental to our story.</p>
 
 </div>
 </div>
@@ -283,381 +275,13 @@
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">full_year_data</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">(</span><span class="n">year_range</span><span class="p">,</span> <span class="n">MY_PATH</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>/media/dcm/HDD/ADA_DATA 1990q1
-already on file
-/media/dcm/HDD/ADA_DATA 1990q2
-already on file
-/media/dcm/HDD/ADA_DATA 1990q3
-already on file
-/media/dcm/HDD/ADA_DATA 1990q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1990q1.json
-/media/dcm/HDD/ADA_DATA/1990q2.json
-/media/dcm/HDD/ADA_DATA/1990q3.json
-/media/dcm/HDD/ADA_DATA/1990q4.json
-/media/dcm/HDD/ADA_DATA 1991q1
-already on file
-/media/dcm/HDD/ADA_DATA 1991q2
-already on file
-/media/dcm/HDD/ADA_DATA 1991q3
-already on file
-/media/dcm/HDD/ADA_DATA 1991q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1991q1.json
-/media/dcm/HDD/ADA_DATA/1991q2.json
-/media/dcm/HDD/ADA_DATA/1991q3.json
-/media/dcm/HDD/ADA_DATA/1991q4.json
-/media/dcm/HDD/ADA_DATA 1992q1
-already on file
-/media/dcm/HDD/ADA_DATA 1992q2
-already on file
-/media/dcm/HDD/ADA_DATA 1992q3
-already on file
-/media/dcm/HDD/ADA_DATA 1992q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1992q1.json
-/media/dcm/HDD/ADA_DATA/1992q2.json
-/media/dcm/HDD/ADA_DATA/1992q3.json
-/media/dcm/HDD/ADA_DATA/1992q4.json
-/media/dcm/HDD/ADA_DATA 1993q1
-already on file
-/media/dcm/HDD/ADA_DATA 1993q2
-already on file
-/media/dcm/HDD/ADA_DATA 1993q3
-already on file
-/media/dcm/HDD/ADA_DATA 1993q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1993q1.json
-/media/dcm/HDD/ADA_DATA/1993q2.json
-/media/dcm/HDD/ADA_DATA/1993q3.json
-/media/dcm/HDD/ADA_DATA/1993q4.json
-/media/dcm/HDD/ADA_DATA 1994q1
-already on file
-/media/dcm/HDD/ADA_DATA 1994q2
-already on file
-/media/dcm/HDD/ADA_DATA 1994q3
-already on file
-/media/dcm/HDD/ADA_DATA 1994q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1994q1.json
-/media/dcm/HDD/ADA_DATA/1994q2.json
-/media/dcm/HDD/ADA_DATA/1994q3.json
-/media/dcm/HDD/ADA_DATA/1994q4.json
-/media/dcm/HDD/ADA_DATA 1995q1
-already on file
-/media/dcm/HDD/ADA_DATA 1995q2
-already on file
-/media/dcm/HDD/ADA_DATA 1995q3
-already on file
-/media/dcm/HDD/ADA_DATA 1995q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1995q1.json
-/media/dcm/HDD/ADA_DATA/1995q2.json
-/media/dcm/HDD/ADA_DATA/1995q3.json
-/media/dcm/HDD/ADA_DATA/1995q4.json
-/media/dcm/HDD/ADA_DATA 1996q1
-already on file
-/media/dcm/HDD/ADA_DATA 1996q2
-already on file
-/media/dcm/HDD/ADA_DATA 1996q3
-already on file
-/media/dcm/HDD/ADA_DATA 1996q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1996q1.json
-/media/dcm/HDD/ADA_DATA/1996q2.json
-/media/dcm/HDD/ADA_DATA/1996q3.json
-/media/dcm/HDD/ADA_DATA/1996q4.json
-/media/dcm/HDD/ADA_DATA 1997q1
-already on file
-/media/dcm/HDD/ADA_DATA 1997q2
-already on file
-/media/dcm/HDD/ADA_DATA 1997q3
-already on file
-/media/dcm/HDD/ADA_DATA 1997q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1997q1.json
-/media/dcm/HDD/ADA_DATA/1997q2.json
-/media/dcm/HDD/ADA_DATA/1997q3.json
-/media/dcm/HDD/ADA_DATA/1997q4.json
-/media/dcm/HDD/ADA_DATA 1998q1
-already on file
-/media/dcm/HDD/ADA_DATA 1998q2
-already on file
-/media/dcm/HDD/ADA_DATA 1998q3
-already on file
-/media/dcm/HDD/ADA_DATA 1998q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1998q1.json
-/media/dcm/HDD/ADA_DATA/1998q2.json
-/media/dcm/HDD/ADA_DATA/1998q3.json
-/media/dcm/HDD/ADA_DATA/1998q4.json
-/media/dcm/HDD/ADA_DATA 1999q1
-already on file
-/media/dcm/HDD/ADA_DATA 1999q2
-already on file
-/media/dcm/HDD/ADA_DATA 1999q3
-already on file
-/media/dcm/HDD/ADA_DATA 1999q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/1999q1.json
-/media/dcm/HDD/ADA_DATA/1999q2.json
-/media/dcm/HDD/ADA_DATA/1999q3.json
-/media/dcm/HDD/ADA_DATA/1999q4.json
-/media/dcm/HDD/ADA_DATA 2000q1
-already on file
-/media/dcm/HDD/ADA_DATA 2000q2
-already on file
-/media/dcm/HDD/ADA_DATA 2000q3
-already on file
-/media/dcm/HDD/ADA_DATA 2000q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2000q1.json
-/media/dcm/HDD/ADA_DATA/2000q2.json
-/media/dcm/HDD/ADA_DATA/2000q3.json
-/media/dcm/HDD/ADA_DATA/2000q4.json
-/media/dcm/HDD/ADA_DATA 2001q1
-already on file
-/media/dcm/HDD/ADA_DATA 2001q2
-already on file
-/media/dcm/HDD/ADA_DATA 2001q3
-already on file
-/media/dcm/HDD/ADA_DATA 2001q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2001q1.json
-/media/dcm/HDD/ADA_DATA/2001q2.json
-/media/dcm/HDD/ADA_DATA/2001q3.json
-/media/dcm/HDD/ADA_DATA/2001q4.json
-/media/dcm/HDD/ADA_DATA 2002q1
-already on file
-/media/dcm/HDD/ADA_DATA 2002q2
-already on file
-/media/dcm/HDD/ADA_DATA 2002q3
-already on file
-/media/dcm/HDD/ADA_DATA 2002q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2002q1.json
-/media/dcm/HDD/ADA_DATA/2002q2.json
-/media/dcm/HDD/ADA_DATA/2002q3.json
-/media/dcm/HDD/ADA_DATA/2002q4.json
-/media/dcm/HDD/ADA_DATA 2003q1
-already on file
-/media/dcm/HDD/ADA_DATA 2003q2
-already on file
-/media/dcm/HDD/ADA_DATA 2003q3
-already on file
-/media/dcm/HDD/ADA_DATA 2003q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2003q1.json
-/media/dcm/HDD/ADA_DATA/2003q2.json
-/media/dcm/HDD/ADA_DATA/2003q3.json
-/media/dcm/HDD/ADA_DATA/2003q4.json
-/media/dcm/HDD/ADA_DATA 2004q1
-already on file
-/media/dcm/HDD/ADA_DATA 2004q2
-already on file
-/media/dcm/HDD/ADA_DATA 2004q3
-already on file
-/media/dcm/HDD/ADA_DATA 2004q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2004q1.json
-/media/dcm/HDD/ADA_DATA/2004q2.json
-/media/dcm/HDD/ADA_DATA/2004q3.json
-/media/dcm/HDD/ADA_DATA/2004q4.json
-/media/dcm/HDD/ADA_DATA 2005q1
-already on file
-/media/dcm/HDD/ADA_DATA 2005q2
-already on file
-/media/dcm/HDD/ADA_DATA 2005q3
-already on file
-/media/dcm/HDD/ADA_DATA 2005q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2005q1.json
-/media/dcm/HDD/ADA_DATA/2005q2.json
-/media/dcm/HDD/ADA_DATA/2005q3.json
-/media/dcm/HDD/ADA_DATA/2005q4.json
-/media/dcm/HDD/ADA_DATA 2006q1
-already on file
-/media/dcm/HDD/ADA_DATA 2006q2
-already on file
-/media/dcm/HDD/ADA_DATA 2006q3
-already on file
-/media/dcm/HDD/ADA_DATA 2006q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2006q1.json
-/media/dcm/HDD/ADA_DATA/2006q2.json
-/media/dcm/HDD/ADA_DATA/2006q3.json
-/media/dcm/HDD/ADA_DATA/2006q4.json
-/media/dcm/HDD/ADA_DATA 2007q1
-already on file
-/media/dcm/HDD/ADA_DATA 2007q2
-already on file
-/media/dcm/HDD/ADA_DATA 2007q3
-already on file
-/media/dcm/HDD/ADA_DATA 2007q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2007q1.json
-/media/dcm/HDD/ADA_DATA/2007q2.json
-/media/dcm/HDD/ADA_DATA/2007q3.json
-/media/dcm/HDD/ADA_DATA/2007q4.json
-/media/dcm/HDD/ADA_DATA 2008q1
-already on file
-/media/dcm/HDD/ADA_DATA 2008q2
-already on file
-/media/dcm/HDD/ADA_DATA 2008q3
-already on file
-/media/dcm/HDD/ADA_DATA 2008q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2008q1.json
-/media/dcm/HDD/ADA_DATA/2008q2.json
-/media/dcm/HDD/ADA_DATA/2008q3.json
-/media/dcm/HDD/ADA_DATA/2008q4.json
-/media/dcm/HDD/ADA_DATA 2009q1
-already on file
-/media/dcm/HDD/ADA_DATA 2009q2
-already on file
-/media/dcm/HDD/ADA_DATA 2009q3
-already on file
-/media/dcm/HDD/ADA_DATA 2009q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2009q1.json
-/media/dcm/HDD/ADA_DATA/2009q2.json
-/media/dcm/HDD/ADA_DATA/2009q3.json
-/media/dcm/HDD/ADA_DATA/2009q4.json
-/media/dcm/HDD/ADA_DATA 2010q1
-already on file
-/media/dcm/HDD/ADA_DATA 2010q2
-already on file
-/media/dcm/HDD/ADA_DATA 2010q3
-already on file
-/media/dcm/HDD/ADA_DATA 2010q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2010q1.json
-/media/dcm/HDD/ADA_DATA/2010q2.json
-/media/dcm/HDD/ADA_DATA/2010q3.json
-/media/dcm/HDD/ADA_DATA/2010q4.json
-/media/dcm/HDD/ADA_DATA 2011q1
-already on file
-/media/dcm/HDD/ADA_DATA 2011q2
-already on file
-/media/dcm/HDD/ADA_DATA 2011q3
-already on file
-/media/dcm/HDD/ADA_DATA 2011q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2011q1.json
-/media/dcm/HDD/ADA_DATA/2011q2.json
-/media/dcm/HDD/ADA_DATA/2011q3.json
-/media/dcm/HDD/ADA_DATA/2011q4.json
-/media/dcm/HDD/ADA_DATA 2012q1
-already on file
-/media/dcm/HDD/ADA_DATA 2012q2
-already on file
-/media/dcm/HDD/ADA_DATA 2012q3
-already on file
-/media/dcm/HDD/ADA_DATA 2012q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2012q1.json
-/media/dcm/HDD/ADA_DATA/2012q2.json
-/media/dcm/HDD/ADA_DATA/2012q3.json
-/media/dcm/HDD/ADA_DATA/2012q4.json
-/media/dcm/HDD/ADA_DATA 2013q1
-already on file
-/media/dcm/HDD/ADA_DATA 2013q2
-already on file
-/media/dcm/HDD/ADA_DATA 2013q3
-already on file
-/media/dcm/HDD/ADA_DATA 2013q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2013q1.json
-/media/dcm/HDD/ADA_DATA/2013q2.json
-/media/dcm/HDD/ADA_DATA/2013q3.json
-/media/dcm/HDD/ADA_DATA/2013q4.json
-/media/dcm/HDD/ADA_DATA 2014q1
-already on file
-/media/dcm/HDD/ADA_DATA 2014q2
-already on file
-/media/dcm/HDD/ADA_DATA 2014q3
-already on file
-/media/dcm/HDD/ADA_DATA 2014q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2014q1.json
-/media/dcm/HDD/ADA_DATA/2014q2.json
-/media/dcm/HDD/ADA_DATA/2014q3.json
-/media/dcm/HDD/ADA_DATA/2014q4.json
-/media/dcm/HDD/ADA_DATA 2015q1
-already on file
-/media/dcm/HDD/ADA_DATA 2015q2
-already on file
-/media/dcm/HDD/ADA_DATA 2015q3
-already on file
-/media/dcm/HDD/ADA_DATA 2015q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2015q1.json
-/media/dcm/HDD/ADA_DATA/2015q2.json
-/media/dcm/HDD/ADA_DATA/2015q3.json
-/media/dcm/HDD/ADA_DATA/2015q4.json
-/media/dcm/HDD/ADA_DATA 2016q1
-already on file
-/media/dcm/HDD/ADA_DATA 2016q2
-already on file
-/media/dcm/HDD/ADA_DATA 2016q3
-already on file
-/media/dcm/HDD/ADA_DATA 2016q4
-already on file
-loading data from disk
-/media/dcm/HDD/ADA_DATA/2016q1.json
-/media/dcm/HDD/ADA_DATA/2016q2.json
-/media/dcm/HDD/ADA_DATA/2016q3.json
-/media/dcm/HDD/ADA_DATA/2016q4.json
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1008,7 +632,7 @@ loading data from disk
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pipeline</span> <span class="k">import</span> <span class="n">load_layers_data</span>
@@ -1019,109 +643,165 @@ loading data from disk
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Comparison between Tencent and Facebook. Both patent applications were filed in 2013, and both are for a display screen with a GUI.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">facebook</span> <span class="o">=</span> <span class="n">load_layers_data</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;facebook&#39;</span><span class="p">,</span> <span class="n">patent_number</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;D725666&#39;</span><span class="p">],</span> <span class="n">layers</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">data_dir</span> <span class="o">=</span> <span class="n">MY_PATH</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
-    </div>
-</div>
-</div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="output_area">
 
-    </div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/media/dcm/HDD/ADA_DATA facebook_layer0.json
+already on file
+/media/dcm/HDD/ADA_DATA facebook_layer1.json
+already on file
+/media/dcm/HDD/ADA_DATA facebook_layer2.json
+already on file
+/media/dcm/HDD/ADA_DATA facebook_layer3.json
+already on file
+saving data
+</pre>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span> <span class="o">=</span> <span class="n">load_layers_data</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="n">patent_number</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;9430098&#39;</span><span class="p">],</span> <span class="n">layers</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">data_dir</span> <span class="o">=</span> <span class="n">MY_PATH</span><span class="p">)</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tencent</span> <span class="o">=</span> <span class="n">load_layers_data</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;tencent&#39;</span><span class="p">,</span> <span class="n">patent_number</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;D725670&#39;</span><span class="p">],</span> <span class="n">layers</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">data_dir</span> <span class="o">=</span> <span class="n">MY_PATH</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/media/dcm/HDD/ADA_DATA tencent_layer0.json
+already on file
+/media/dcm/HDD/ADA_DATA tencent_layer1.json
+already on file
+/media/dcm/HDD/ADA_DATA tencent_layer2.json
+already on file
+/media/dcm/HDD/ADA_DATA tencent_layer3.json
+already on file
+saving data
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">tencent</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">][</span><span class="s1">&#39;inventors&#39;</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="n">tencent</span><span class="p">[</span><span class="s1">&#39;3&#39;</span><span class="p">][</span><span class="s1">&#39;inventors&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[58]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(6, 865)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">][</span><span class="s1">&#39;cited_patents&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">facebook</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">][</span><span class="s1">&#39;inventors&#39;</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="n">facebook</span><span class="p">[</span><span class="s1">&#39;3&#39;</span><span class="p">][</span><span class="s1">&#39;inventors&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">][</span><span class="s1">&#39;inventors&#39;</span><span class="p">]</span>
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
-    </div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[59]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(5, 4528)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The remaining comparisons data was all obtained in the same fashion. We do not include all the code as it would be redundant in this notebook.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -1327,12 +1007,12 @@ loading data from disk
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># evolution in number of inventors for top assignees plot</span>
 <span class="n">assignees_us</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Intel Corporation&#39;</span><span class="p">,</span> <span class="s1">&#39;Amazon Technologies, Inc.&#39;</span><span class="p">,</span><span class="s1">&#39;International Business Machines Corporation&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;Google Inc.&#39;</span><span class="p">,</span> <span class="s1">&#39;General Electric Company&#39;</span><span class="p">,</span> <span class="s1">&#39;QUALCOMM Incorporated&#39;</span><span class="p">]</span>
+                <span class="s1">&#39;Google Inc.&#39;</span><span class="p">,</span> <span class="s1">&#39;General Electric Company&#39;</span><span class="p">,</span> <span class="s1">&#39;QUALCOMM Incorporated&#39;</span><span class="p">,</span> <span class="s1">&#39;Apple Inc.&#39;</span><span class="p">]</span>
 <span class="n">assignees_nonus</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Samsung Electronics Co., Ltd.&#39;</span><span class="p">,</span> <span class="s1">&#39;Canon Kabushiki Kaisha&#39;</span><span class="p">,</span> <span class="s1">&#39;Sony Côrporation&#39;</span><span class="p">,</span>
                    <span class="s1">&#39;Taiwan Semiconductor Manufacturing Company, Ltd.&#39;</span><span class="p">,</span><span class="s1">&#39;Hon Hai Precision Industry Co., Ltd.&#39;</span><span class="p">,</span>
                    <span class="s1">&#39;LG Electronics Inc.&#39;</span><span class="p">,</span><span class="s1">&#39;Huawei Technologies Co., Ltd.&#39;</span><span class="p">]</span>
@@ -1345,7 +1025,7 @@ loading data from disk
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">get_assignees_plot</span><span class="p">(</span><span class="n">full_year_data</span><span class="p">,</span> <span class="n">assignees_us</span><span class="p">,</span> <span class="n">assignees_nonus</span><span class="p">)</span>
@@ -1373,7 +1053,7 @@ loading data from disk
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">visualizations</span> <span class="k">import</span> <span class="n">save_layers</span>
@@ -1386,10 +1066,10 @@ loading data from disk
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">save_layers</span><span class="p">(</span><span class="n">apple_example_data</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="n">zoom_on</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">layered</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">save_layers</span><span class="p">(</span><span class="n">facebook</span><span class="p">,</span> <span class="s1">&#39;facebook&#39;</span><span class="p">,</span> <span class="n">zoom_on</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">layered</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1399,16 +1079,24 @@ loading data from disk
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">save_layers</span><span class="p">(</span><span class="n">tencent</span><span class="p">,</span> <span class="s1">&#39;tencent&#39;</span><span class="p">,</span> <span class="n">zoom_on</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">layered</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Again, the remaining comparisons visualizations were all obtained in the same fashion, so we only include this example here.</p>
+
+</div>
+</div>
 </div>
  
 

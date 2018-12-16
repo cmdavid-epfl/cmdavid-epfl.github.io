@@ -17,7 +17,7 @@ permalink: /autonomous/
    <div class="story-figure">
       <figure>
       {% include vw.html %}
-      <figcaption> <b>Volkswagon AG Patent.</b> Map illustrating the distribution of individuals listed as inventors in the patent application (Layer 0), and the distribution of the inventors in the patents cited by patent application (Layer 1), etc.. </figcaption>
+      <figcaption> <b>Volkswagen AG Patent.</b> Map illustrating the distribution of individuals listed as inventors in the patent application (Layer 0), and the distribution of the inventors in the patents cited by patent application (Layer 1), etc.. </figcaption>
       </figure>
    </div>
    
