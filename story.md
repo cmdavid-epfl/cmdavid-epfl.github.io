@@ -13,7 +13,7 @@ permalink: /story/
 	      Part 1. The Big Picture.
 	   </h3>
 	   <br>
-	   The map below illustrates the locations of everyone whom was listed as an inventor in a patent whose application was filed in 2013. It does not come as much of a surprise that inventors are spread out quite unevenly around the world, with a noteworthy sparsity in developping regions like Latin America, Africa, the Middle East, and Central Asia, but also quite a few high-density centers. Among the latter are the usual suspects: in the United-States, Southern California and the North-East Coast have among the highest concentration of inventors in the world. In Europe, Germany seems to be leading the pack while in Asia, that role is taken on by Japan.
+	   The map below illustrates the locations of everyone whom was listed as an inventor in a patent whose application was filed in 2013. It does not come as much of a surprise that inventors are spread out quite unevenly around the world, with a noteworthy sparsity in developing regions like Latin America, Africa, the Middle East, and Central Asia, but also quite a few high-density centers. Among the latter are the usual suspects: in the United-States, Southern California and the North-East Coast have among the highest concentration of inventors in the world. In Europe, Germany seems to be leading the pack while in Asia, that role is taken on by Japan.
    </div>
    
    <div class="story-figure">
