@@ -138,7 +138,7 @@ permalink: /story/
 	   <h3>
 	      Part 2. Peeling Back the Layers.
 	   </h3>
-      
+      <br>
        In this second part, we focus on a few examples of similar patents across similar companies, and we analyze the networks supporting those patents in view of what we have seen in the first part. The goal is to figure out whether the networks supporting the innovations of companies in a specific sector of activity will be self-contained or not. We also want to see for a same company, if those networks have evolved in any significant way between in the past few decades.
        
        <br><br>
