@@ -94,7 +94,11 @@ permalink: /story/
    
    <div class="story-text">
    
-       What is interesting here is the density of inventors from US-based assignees in India. While there are close to none in the early 1990's,
+       What is interesting here is the density of inventors from US-based assignees in India, Singapore, China and South Korea. While there are close to no inventors in those regions in the early 1990's, their numbers start growing rapidly in the early 2000's. In general, inventors for US-based assignees seem to be spreading out much more today than they were only twenty years ago. This seems to be less the case for Non-US based assignees. From the map below, we can see that the largest Non-US based assignees have the bulk of their inventors based in Japan and South Korea throughout the entire period. 
+       
+       <br><br>
+       
+       The numbers in Europe are also significant both for US and Non-US assignees. This is somewhat surprising when considering the fact that very few of the top assignees are actually European companies - Siemens and Bayer, both very large firms, are in the top 10 Non-US assignees only until the late 1990's. This paints a picture of Europe as global innovation hub.
       
    </div>
    
@@ -107,34 +111,53 @@ permalink: /story/
    
    <div class="story-text">
    
-       ...
+       The graph below offers a more compact illustration of the two tables above. The graphs show the evolution of the number of inventors for some of the most important assignees in the world. On the US side, IBM clearly dominates, though the explosion in the number of patent applications by Google after 2010 may signal a change in leadership. We also notice the steady yet sure advance of Amazon, and the stark contrast with Intel, whose numbers appear to indicate some instability.
+       
+       <br><br>
+       
+       On the Non-US side, we notice that the trends are much more stable, with the exception of Samsung Electronics, whose quick rise is truly astonishing. It is also interesting to see the divergence between the two Apple suppliers Hon Hai Precision Industry and Taiwan Semiconductor. 
+       
+       <br><br>
+       
+       Finally, on both these graphs, the 2008 financial crises really stands out. For both the largest US and Non-US assignees, this event caused a huge dent in the number of inventors, though they had both recovered by 2013, which speaks volumes to the relentless charge of innovation.
       
    </div>
    
-   {% include image.html file="/assets/tsplot_assignees.png" title="Inventors for Top Assignees." caption=" Evolution in the number of inventors cited in the patent applications for some of the top US and Non-US Assignees, ranked by the number of patent applications."%}
+   {% include image.html file="/assets/tsplot_assignees.png" title="Inventors for Top Assignees." caption=" Evolution in the number of inventors cited in the patent applications for some of the top US (left-hand side) and Non-US (right-hand side) Assignees, ranked by the number of patent applications."%}
    
    <div class="story-text">
    
-       ...
+       From what was seen up until this point, we can paint a pretty clear picture of what a typical innovator looks like today. An innovator today does not go at it alone. They are usually part of an organization (about 10% or all inventors are part of the top 10 US-based or top 10 Non-US based assignees), and on average, more than half the time, it takes 2 inventors to make a make a patent.
+       Region also counts for a lot. We have seen at the very beginning that being in a developping or an underdevelopped country means that your chances of being an innovator are drastically reduced. But even in a developped country like the United-States, the difference still today is large between the dense urban regions and, e.g. the Mountain States. In China also, the difference between Shanghai, Peking, and Hong Kong, and the rest of the country is large. The density of innovation is likely not a direct cause of mass migrations per se, but looking at the issue through this perspective is nonetheless interesting. Rapid urbanisation undeniably brings about issues related to food, water, and housing, to name the most obvious examples. To stand a fighting chance requires the work of brilliant innovators working on these issues. So in order to maintain the standard of living which attracts people to urban centers requires more innovators. The big picture here is then that being an innovator has never been more accessible, given that you are in any one of the blue regions on the map in the very top of this page, and that it is better to be part of this global network with multiple entry points, if you want to be a successful innovator.
+      
+      <br><br>
       
    </div>
-
-   <div class="story-figure">
-      <figure>
-      {% include facebook.html %}
-      <figcaption> <b>Facebook 2013 Display Screen Patent.</b> Map illustrating the distribution of individuals listed as inventors in the patent application (Layer 0), and the distribution of the inventors in the patents cited by patent application (Layer 1), etc.. </figcaption>
-      </figure>
-   </div>
    
-   <div class="story-text">
-   
-       ...
+   <div class="story-test">
+	   <h3>
+	      Part 2. Peeling Back the Layers.
+	   </h3>
       
-   </div>
-
-   <div class="story-figure">
-      <figure>
-      {% include tencent.html %}
-      <figcaption> <b>Tencent 2013 Display Screen Patent.</b> Map illustrating the distribution of individuals listed as inventors in the patent application (Layer 0), and the distribution of the inventors in the patents cited by patent application (Layer 1), etc.. </figcaption>
-      </figure>
+       In this second part, we focus on a few examples of similar patents across similar companies, and we analyze the networks supporting those patents in view of what we have seen in the first part. The goal is to figure out whether the networks supporting the innovations of companies in a specific sector of activity will be self-contained or not. We also want to see for a same company, if those networks have evolved in any significant way between in the past few decades.
+       
+       <br><br>
+       
+       Below, you will find a list of the comparisons we have made. For each of the comparisons, you can display any of the "layers" of innovation behind the companies chosen patent. Each layer in fact represents the density of the inventors listed in the patent applications of that layer. In other words, when <b>Layer 0</b> is active, the map shows the locations of the inventors of the original patent. <b>Layer 1</b> then shows the locations of the inventors for the patents which were cited by the patents in <b>Layer 0</b>, <b>Layer 2</b> then shows the locations of the inventors for the patents which were cited by the patents in <b>Layer 1</b> etc.  
+       <br><br>
+       You can view the analysis in any particular order.
+       <A name="anchor-list"></A>
+       <br>
+        <ul>
+           <li> <h3><a class="page-link" href="{{ "/fb_tencent" | relative_url }}">Facebook and Tencent</a></h3> </li>
+        </ul> 
+       
+       <br><br>
+       The takeaway is that ...  
+       
+       <br><br><br>
+       <h4>
+	      <A class="page-link" href="{{ "/index.html" | relative_url }}">Back to Front Page</A>
+	   </h4>
+      
    </div>
