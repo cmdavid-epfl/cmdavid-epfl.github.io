@@ -41,15 +41,493 @@
   </header>
 
   <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-Story-Outline">Data Story Outline<a class="anchor-link" href="#Data-Story-Outline">&#182;</a></h1><h2 id="Part-1.-The-Big-Picture">Part 1. The Big Picture<a class="anchor-link" href="#Part-1.-The-Big-Picture">&#182;</a></h2><p>In this first part, we answer the following questions:</p>
+<ul>
+<li>What does the typical patent-holder look like today, and how has that evolved between today and the 1990's?</li>
+<li>Is a migration of innovators through time visible in the data, e.g. a convergence towards certain innovation centers?</li>
+<li>How has the number of assignees and inventors evolved in this period?</li>
+</ul>
+<h3 id="Approach-(TO-ADJUST)-"><mark>Approach (TO ADJUST) </mark><a class="anchor-link" href="#Approach-(TO-ADJUST)-">&#182;</a></h3><ul>
+<li>Question 1 can be a natural way to progress after e.g. a short introduction about patents itself, providing the reader with insight into the main sources of patent creation as well as the potentially historic overview of the same metric.  </li>
+<li>Q1.1 focuses on how data evolves through time from a geographic standpoint, and using  maps to visualize the migration could be a good approach. Below (Q2) interactive graphs are discussed and this could be one alternative here as well. <ul>
+<li>One approach is to use several maps from ascending chronological periods of time where the reader could see if patterns of innovation centers emerge</li>
+<li>Another approach could be an interactive chart that enables toggling between different time periods by the reader, enabling comparison by using a single map.</li>
+</ul>
+</li>
+<li>Q1.2. can potentially provide a good segway into what we brought up in the Project's abstract: <em>"While innovation is often portrayed as the product of either one charismatic leader - or a ragtag team of geniuses - in reality we suspect that innovations, however important, happen in small steps supported by large networks of people."</em><ul>
+<li>This will also be addressed in more detail in research question 2.</li>
+<li>Various barplots or line plots could provide helpful tools for answering the first part of the question, while the same tools might also be an initial way to approach the second part, after segmenting the data into geographies. Maps could also be explored here.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Part-2.-Peeling-back-the-layers">Part 2. Peeling back the layers<a class="anchor-link" href="#Part-2.-Peeling-back-the-layers">&#182;</a></h2><p>In this second part, we look at the following examples of innovation networks for specific patents held by the following specific assignees:</p>
+<ul>
+<li>companies : <ul>
+<li>patents :</li>
+</ul>
+</li>
+<li>academic institutions :<ul>
+<li>patents :</li>
+</ul>
+</li>
+<li>governments :<ul>
+<li>patents :</li>
+</ul>
+</li>
+</ul>
+<p>By looking at these networks, we answer the following questions:</p>
+<ul>
+<li>If we take a few different types of companies / government bodies / academic institutions, and look at the network supporting some of their patents, what do these networks look like, in light of the networks seen in Part 1?</li>
+<li>Within the same companies, how have their networks evolved between today and the 1990's, if we look at patents similar to those above?</li>
+<li>Across companies of the same type, to what extent, if any, will their networks be similar?</li>
+</ul>
+<p>While the <strong>data gathering</strong> and <strong>data preprocessing</strong> were done mostly in parallel and in an interative fashion, for simplicity we nonetheless start by presenting the data gathering part and we then present the data preprocessing, both as in their final iteration.</p>
+<h3 id="Approach-(TO-ADJUST)"><mark>Approach (TO ADJUST)</mark><a class="anchor-link" href="#Approach-(TO-ADJUST)">&#182;</a></h3><ul>
+<li>For the geographically focused research question, a natural approach can be to explore the data using maps to visualize e.g. the innovation networks.  </li>
+<li>In HW2 we worked with <strong>Folium</strong>, which can be one interesting tool here, as we have access to clean longitude- and latitude data (see preprocessing.ipynb). Folium has e.g. cluster-functionality, which could be a way to quantify the magnitude of the networks in different geographic zones. <ul>
+<li>Folium also gives us the option to add interactivity.</li>
+</ul>
+</li>
+<li>To represent networks, an alternative could be to use a graph-based approach, where relationships between entities within a network could be represented by nodes and edges. The Python library <strong>networkx</strong>, which enables the creation of Network Graphs, is one option. <ul>
+<li>Network representations could also be relevant to answer question 2.2, when exploring the citation of patents from similar companies. </li>
+</ul>
+</li>
+<li>Throughout the data story, the usage of <strong>interactive graphs</strong> could be particularly efficient in making the plots self-sufficient and to invite exploration by the reader. Adding the element of time can enable comparing the development of innovation networks, and by hovering over parts of the map the reader can obtain more detailed information. <ul>
+<li>The Python library <strong>HoloViews</strong> can, alongside networkx, enable the creation of interactive network graphs. </li>
+<li>Another interactive visualization library to explore is <strong>Bokeh</strong>.</li>
+</ul>
+</li>
+<li>Questions Q2.1-2. could provide tangible examples for how prevalent (or not) patent networks are for well-known companies.</li>
+<li>By following these results with those of questions Q2.3-4 we believe it could provide a good overview into the similarities and/or differences between the three major categories of organizations (academia, non-governmental and governmental organizations), hence being of interest to readers within various field, and also (hopefully) providing input to our peers (students) that might be interested in research and innovation, and that might contemplate various possible tracks for their careers.  </li>
+</ul>
+<p>In summary, the visualization techniques, as well as the amount of interactivity to add, if any, we decide upon will have a big impact on the quality of the data story. This latter is intended to be eventually recounted on a website spitted out by Jekyll, a static site generator.</p>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-Gathering">Data Gathering<a class="anchor-link" href="#Data-Gathering">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="PatentsView-Database">PatentsView Database<a class="anchor-link" href="#PatentsView-Database">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The database offers a wide range of features for all patents since 1976, which can be extracted through their API.</p>
+<p>The most relevant documentation can be found here:</p>
+<ul>
+<li><a href="http://www.patentsview.org/api/query-language.html">Query Language Documentation</a></li>
+<li><a href="http://www.patentsview.org/api/patent.html">Field List</a></li>
+</ul>
+<p>For each research question, we came up with a list of required output <strong>fields</strong> which the API calls needed to return, as well as a list of input <strong>filters</strong> that limit the amount of extra pre-processing we had to do, while at the same time providing us with all the information necessary for us to cover the topics listed in the first section.</p>
+<p>The complete list of <strong>fields</strong> is as follows:</p>
+<ul>
+<li><p><strong>Part 1</strong>. For each patent in a given timeframe, we need:</p>
+<ul>
+<li><code>cited_patent_number</code>: Patent number of the cited patents.</li>
+<li><code>inventor_latitude</code>: Latitude of all the inventors as listed on the selected patent.</li>
+<li><code>inventor_longitude</code>: Longitude of all the inventors as listed on the selected patent.</li>
+<li><code>patent_type</code>: Category of patent (see below).</li>
+<li><code>assignee_organization</code>: Organization name, if assignee is organization.</li>
+<li><code>assignee_type</code>: Classification of assignee (see below).</li>
+</ul>
+</li>
+<li><p>For <strong>Part 2</strong>, the list is the same, with the exception of the last two items, which are not needed for the second part.</p>
+</li>
+</ul>
+<p>The <code>assignee_type</code> field allows us to have a good picture of the typical patent rights holder. The <code>assignee_type</code> categories are as follows:</p>
+<ul>
+<li>'2': US company or corporation</li>
+<li>'3': foreign company or corporation</li>
+<li>'4': US individual</li>
+<li>'5': foreign individual</li>
+<li>'6': US government</li>
+<li>'7': foreign government</li>
+<li>'8': country government</li>
+<li>'9': US state governement</li>
+<li>'1x': part interest</li>
+</ul>
+<p>As well, the reason for including the <code>patent_type</code> field is that we want to be able to distinguish between major patent categories:</p>
+<ul>
+<li>'Defensive Publication': "... an intellectual property strategy used to prevent another party from obtaining a patent on a product, apparatus or method for instance." ( <a href="https://en.wikipedia.org/wiki/Defensive_publication">wikipedia</a> )</li>
+<li>'Design': "... legal protection granted to the ornamental design of a functional item" ( <a href="https://en.wikipedia.org/wiki/Design_patent">wikipedia</a> )</li>
+<li>'Plant': covering any "new variety of plant" ( <a href="https://en.wikipedia.org/wiki/Plant_breeders&#39;_rights">wikipedia</a> )</li>
+<li>'Reissue': correction of "a significant error in an already issued patent" ( <a href="https://definitions.uslegal.com/r/reissue-patent/">uslegal</a> )</li>
+<li>'Statutory Invention Registration': "for publishing patent applications on which they no longer felt they could get patents" ( <a href="https://en.wikipedia.org/wiki/United_States_Statutory_Invention_Registration">wikipedia</a> )</li>
+<li>'Utility': patent for a "useful" patent ( <a href="https://en.wikipedia.org/wiki/Utility_(patent">wikipedia</a>) )</li>
+</ul>
+<p>We chose to query for the latitudes and longitudes instead of for the location in the format city-state-country, as the former data are more useful for visualization purposes. Furthermore, during our preliminary data analysis, the data in the city-state-country format was not uniform (i.e., some cities were named in full, while others were abbreviated in different ways). On the other hand, the latitudes and longitudes data is uniform, and the missing data is also easier to clean than with names format.</p>
+<p>We also needed to be able to query for patents based on the following <strong>filters</strong>:</p>
+<ul>
+<li><code>patent_number</code>: US Patent number, as assigned by USPTO.</li>
+<li><code>app_date</code>: Date the patent application was filed (filing date)</li>
+</ul>
+<p>For the purposes of situating in time the patent data we have, we chose to consider the date at which the patent application was filed, instead of the date at which it was granted. The reasoning behind this choice is that at the time of the patent application, the innovation supporting it already exists. So while using the application date will most probably reduce the amount of most-recent data we can work with, in our opinion it will paint a more vivid picture of innovation. Furthermore, as our analysis is performed on data spanning a few decades, we're confident this choice will not be detremental to our story.</p>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Working-with-the-PatentsView-API">Working with the PatentsView API<a class="anchor-link" href="#Working-with-the-PatentsView-API">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>While the <strong>PatentsView API</strong> made it easy to extract data, the usage limits meant we had to implement the following functions to automate the incremental extraction and saving of all the data we needed.</p>
+<ul>
+<li>patentsviewAPI :<ul>
+<li>query :</li>
+<li>get_data :</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-Preprocessing">Data Preprocessing<a class="anchor-link" href="#Data-Preprocessing">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1.">Part 1.<a class="anchor-link" href="#Part-1.">&#182;</a></h2><p>The following functions in the <strong>pipeline</strong> module are specifically for the first part:</p>
+<ul>
+<li><p>load_data :</p>
+<ul>
+<li>get_full_year_data :</li>
+<li>(load_)preprocess_data :</li>
+</ul>
+</li>
+<li><p>get_ts :</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pipeline</span> <span class="k">import</span> <span class="n">load_data</span><span class="p">,</span> <span class="n">get_ts</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MY_PATH</span> <span class="o">=</span> <span class="s1">&#39;/media/dcm/HDD/ADA_DATA&#39;</span>
+<span class="n">MIN_YEAR</span> <span class="o">=</span> <span class="mi">1990</span>
+<span class="n">MAX_YEAR</span> <span class="o">=</span> <span class="mi">2016</span>
+<span class="n">year_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">MIN_YEAR</span><span class="p">,</span><span class="n">MAX_YEAR</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Running this next line for the full time range (1990-2016), if no data is yet saved to disk, will take a few hours</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">full_year_data</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">(</span><span class="n">year_range</span><span class="p">,</span> <span class="n">MY_PATH</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-2.">Part 2.<a class="anchor-link" href="#Part-2.">&#182;</a></h2><p>The functions to get the data for part 2 are:</p>
+<ul>
+<li>load_layers(_data) :<ul>
+<li>get_layers_data :<ul>
+<li>get_cited_patents_data :</li>
+<li>preprocess_layer_data :</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pipeline</span> <span class="k">import</span> <span class="n">load_layers_data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span> <span class="o">=</span> <span class="n">load_layers_data</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="n">patent_number</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;9430098&#39;</span><span class="p">],</span> <span class="n">layers</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">data_dir</span> <span class="o">=</span> <span class="n">MY_PATH</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/media/dcm/HDD/ADA_DATA Apple_layer0.json
+already on file
+/media/dcm/HDD/ADA_DATA Apple_layer1.json
+already on file
+/media/dcm/HDD/ADA_DATA Apple_layer2.json
+already on file
+/media/dcm/HDD/ADA_DATA Apple_layer3.json
+already on file
+saving data
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;cited_patents&#39;: [&#39;7345677&#39;, &#39;8477463&#39;],
+ &#39;inventors&#39;:          latitude  longitude
+ 1221243   37.9476   -122.525
+ 3146580   33.6846   -117.826
+ 3317742   37.3852   -122.114}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">apple_example_data</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;cited_patents&#39;: [&#39;4317227&#39;,
+  &#39;5059959&#39;,
+  &#39;5194852&#39;,
+  &#39;5404458&#39;,
+  &#39;5412189&#39;,
+  &#39;5628031&#39;,
+  &#39;5638093&#39;,
+  &#39;5691959&#39;,
+  &#39;5717432&#39;,
+  &#39;5856820&#39;,
+  &#39;5986224&#39;,
+  &#39;6161434&#39;,
+  &#39;6167165&#39;,
+  &#39;6404353&#39;,
+  &#39;6549193&#39;,
+  &#39;6555235&#39;,
+  &#39;6724373&#39;,
+  &#39;6738051&#39;,
+  &#39;6891527&#39;,
+  &#39;5152401&#39;],
+ &#39;inventors&#39;:          latitude  longitude
+ 1878402   48.8638    2.44845
+ 2212351   48.8566    2.35222
+ 2212352   48.8566    2.35222
+ 2824276   13.0423   77.61360
+ 503175    48.8130    2.23847}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Visualizations">Visualizations<a class="anchor-link" href="#Visualizations">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1.">Part 1.<a class="anchor-link" href="#Part-1.">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">visualizations</span> <span class="k">import</span> <span class="n">get_png</span><span class="p">,</span> <span class="n">get_timeseries_fig</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-2.">Part 2.<a class="anchor-link" href="#Part-2.">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">visualizations</span> <span class="k">import</span> <span class="n">save_layers</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">save_layers</span><span class="p">(</span><span class="n">apple_example_data</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="n">zoom_on</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">layered</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
 
 
   </div>

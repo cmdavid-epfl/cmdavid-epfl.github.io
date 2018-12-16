@@ -195,9 +195,10 @@ table {
   font-size: 80px;
   font-weight: 400;
   line-height: auto;
-  width: 600px;
   display: inline-block;
-  margin-top: 60px; }
+  margin-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px; }
   .story-title, .story-title:visited {
     color: #424242; }
 
@@ -207,10 +208,10 @@ table {
   flex: 1; }
 
 .story-figure {
-  padding: 60px;
-  display: inline-block;
-  width: auto;
-  height: auto; }
+  display: inline-block; }
+
+.figure-figure figcaption {
+  font-size: 19.2px; }
 
 .story-text {
   margin-left: auto;
@@ -219,7 +220,6 @@ table {
   margin-top: 60px;
   text-align: justify;
   text-justify: inter-word;
-  width: 800px;
   font-size: 16px; }
   .story-text h2 {
     font-size: 32px; }
@@ -426,7 +426,6 @@ table {
   margin-top: 150px;
   text-align: justify;
   text-justify: inter-word;
-  width: 600px;
   font-size: 16px; }
   .front-page-content h2 {
     font-size: 32px; }
