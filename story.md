@@ -149,7 +149,7 @@ permalink: /story/
        <A name="anchor-list"></A>
        <br>
         <ul>
-           <li> <h3><a class="page-link" href="{{ "/fb_tencent" | relative_url }}">Facebook and Tencent</a></h3> </li>
+           <li> <h3><a class="page-link" href="{{ "/fb_tencent" | relative_url }}">Tencent and Facebook</a></h3> </li>
         </ul> 
        
        <br><br>
