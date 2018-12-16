@@ -134,7 +134,7 @@ permalink: /story/
       
    </div>
    
-   <div class="story-test">
+   <div class="story-text">
 	   <h3>
 	      Part 2. Peeling Back the Layers.
 	   </h3>
