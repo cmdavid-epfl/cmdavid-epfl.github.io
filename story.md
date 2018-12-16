@@ -56,12 +56,12 @@ permalink: /story/
    {% include image.html file="/assets/US_All.gif" title="Zoom on the US." caption="Timelapse of the distribution of inventors in the US for the period 1990-2016."%}
    
    <div class="story-text">
-   As for the US, while at the start of the 1990's, the distribution of innovators closely resembles that of Europe - with the notable exception of the Mountain States - from 2000 onwards the density of inventors in a number of cities grow remarkably : New York, Boston, Austin, Houston, Seattle, Portland, San Francisco, Los Angeles, to name a few.
+   As for the US, while at the start of the 1990's, the distribution of innovators closely resembles that of Europe - with the notable exception of the Mountain States - from 2000 onwards the density of inventors in a number of cities grows remarkably : New York, Boston, Austin, Houston, Seattle, Portland, San Francisco, Los Angeles, to name a few.
    
    <br><br><h4>
       A Quantitative Perspective
    </h4>
-   While these maps paint a vivid picture of how innovation has evolved throught time in different places, we take a look at the numbers behind these maps before being drawing definitive conclusions. From the first graph below we can see spectacular growth in the raw number of patent applications that are filed each year in the period under scrutiny. The number of utility patent applications in particular experiences a growth of 150% between 1990 and 2013. What also stands out from this graph is the almost constant proportion of patent types. 'Other Patents' include plant patents, defensive publications, and statutory invention registrations.
+   While these maps paint a vivid picture of how innovation has evolved through time in different places, we take a look at the numbers behind these maps before drawing definitive conclusions. From the first graph below we can see spectacular growth in the raw number of patent applications that are filed each year in the period under scrutiny. The number of utility patent applications in particular experiences a growth of 150% between 1990 and 2013. What also stands out from this graph is the almost constant proportion of patent types. 'Other Patents' include plant patents, defensive publications, and statutory invention registrations.
    
    <br><br>
    
