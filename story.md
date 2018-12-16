@@ -150,6 +150,7 @@ permalink: /story/
        <br>
         <ul>
            <li> <h3><a class="page-link" href="{{ "/fb_tencent" | relative_url }}">Tencent and Facebook</a></h3> </li>
+           <li> <h3><a class="page-link" href="{{ "/rochester_dresden" | relative_url }}">Rochester University and Dresden University</a></h3> </li>
         </ul> 
        
        <br><br>
